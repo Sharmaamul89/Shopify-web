@@ -1,0 +1,76 @@
+.banner {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .close {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Default Hurry Up style */
+  .hurryUp {
+    color: white;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover effect */
+  .hurryUpHover {
+    color: yellow;  /* ✅ Color Change */
+    margin-left: 10px;  /* ✅ Arrow Move */
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      padding: 8px; /* Reduce padding on smaller screens */
+      font-size: 12px; /* Smaller text for mobile */
+    }
+  
+    .close {
+      right: 10px; /* Adjust position for smaller screen */
+      font-size: 14px; /* Smaller close button text */
+    }
+  
+    .hurryUp {
+      font-size: 12px; /* Slightly smaller font for mobile */
+    }
+  
+    .hurryUpHover {
+      font-size: 12px; /* Consistent hover font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .banner {
+      padding: 6px; /* Further reduce padding on very small screens */
+      font-size: 10px; /* Smaller font for very small screens */
+    }
+  
+    .close {
+      right: 8px; /* Adjust right positioning for tiny screens */
+      font-size: 12px; /* Even smaller close button text */
+    }
+  
+    .hurryUp {
+      font-size: 10px; /* Smaller font on tiny screens */
+    }
+  
+    .hurryUpHover {
+      font-size: 10px; /* Consistent hover font size on tiny screens */
+    }
+  }

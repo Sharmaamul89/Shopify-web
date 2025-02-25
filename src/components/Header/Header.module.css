@@ -1,0 +1,137 @@
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.left, .center, .right {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.left span, .right span {
+  margin-left: 8px;
+}
+
+.contacticon {
+  color: lightgrey;
+  margin-right: -4px;
+}
+
+.contact {
+  color: black;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.contact:hover{
+  color: #00bcd4;
+}
+
+
+
+.mailicon {
+  color: lightgrey;
+  margin-right: -4px;
+}
+
+.mail {
+  color: black;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.mail:hover{
+  color:#00bcd4;
+}
+
+.icon {
+  color: lightgrey;
+  margin-right: -2px;
+  gap: 10px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ff6347; 
+}
+
+.shopNow:hover{
+  color:#00bcd4;
+}
+
+.arrow {
+  font-size: 12px;
+  margin-left: -14px;
+}
+
+.location {
+  margin-left: 12px;
+  font-size: 12px;
+}
+
+.location:hover{
+  color:#00bcd4;
+}
+
+.language {
+  margin-left: 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.language:hover{
+  color:#00bcd4;
+}
+
+.flag {
+  margin-left: 12px;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative; /* Important for positioning the dropdown relative to the flag */
+}
+
+.flag:hover{
+  color:#00bcd4
+}
+
+/* Fix for dropdown positioning */
+.right {
+  display: flex;
+  align-items: center;
+  position: relative; /* Added relative positioning for correct dropdown placement */
+}
+
+/* Dropdown list styles */
+.dropdownList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%; /* Ensure the dropdown is below the USD text */
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  width: 180px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: left; /* Align text to the left inside the dropdown */
+}
+
+
+.dropdownItem {
+  padding: 3px;
+  font-size: 10px;
+  cursor: pointer;
+  gap:2px;
+}
+
+.dropdownItem:hover{
+  color: #00bcd4
+}
+

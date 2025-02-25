@@ -1,0 +1,207 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .menu li a:hover,
+  .menu li a:focus {
+    color: #00bcd4;
+  }
+  
+  .newBadge, .saleBadge {
+    position: absolute;
+    top: -8px;
+    right: -15px;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 10px;
+  }
+  
+  .saleBadge {
+    background-color: #ff9800;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon {
+    position: relative;
+    font-size: 30px;
+  }
+  
+  .iconHover:hover {
+    color: #00bcd4;
+  }
+  
+  
+  .heartContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .heartBadge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  
+  .cartContainer {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cartBadge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  
+  /* Login Popup */
+  .popupOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .popupRight {
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  .popupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .popupHeader h2{
+    font-size: 14px; 
+  }
+
+  .HeadingLogin{
+    font-size: 2px;
+  }
+  
+  .closeIcon {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginForm label {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .loginForm input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc; 
+    width: 100%;
+    outline: none; 
+  }
+  
+ 
+  .emailInput{
+    margin-bottom: 15px;
+  }
+  .forgotPassword {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #878787;
+    text-decoration: underline;
+  }
+
+  .forgotPassword:hover{
+    color: #00bcd4;
+  }
+
+  .signInButton {
+    margin-top: 25px;
+    background-color: #56cfe1;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .createAccount {
+    margin-top: 25px;
+    text-align: left;
+    color: #878787;
+    text-decoration: underline;
+  }
+
+  .createAccount:hover{
+    color: #00bcd4;
+  }
+  
+  

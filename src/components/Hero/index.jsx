@@ -1,24 +1,15 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
-import styles from "@/app/page.module.css";
+import styles from "./Hero.module.css";
 
+const images = ["/slider-01.jpg", "/slider-02.jpg", "/slider-03.jpg"];
 
-const images = [
-    
-  "/assets/images/slider-01.jpg",
-  "/assets/images/slider-01.jpg",
-  "/assets/images/slider-01.jpg",
-  "/assets/images/slider-01.jpg",
-  "/assets/images/slider-01.jpg",
-];
 const HeroCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [dragStart, setDragStart] = useState(null);
   const intervalRef = useRef(null);
 
-  // Auto slide every 3 seconds
   useEffect(() => {
     startAutoSlide();
     return () => stopAutoSlide();
@@ -92,11 +83,10 @@ const HeroCarousel = () => {
               transition: "transform 0.5s ease",
             }}
           >
-            <Image
+            <img
               src={src}
               alt={`Slide ${index + 1}`}
-              fill
-              style={{ objectFit: "cover" }}
+              className={styles.slideImg}
             />
           </div>
         ))}
